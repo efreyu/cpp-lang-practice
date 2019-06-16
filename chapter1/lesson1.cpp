@@ -1,13 +1,21 @@
-//
-// Created by efreyu on 6/17/2019.
-//
+/*
+ * Created by efreyu on 6/17/2019.
+ * Вычисляем все корни квадратного уравнения.
+ */
 #include <iostream>
+#include <cmath>
 
 int main() {
-    int first, second, sum;
-    std::cout << "Enter two numbers: ";
-    std::cin >> first >> second;
-    sum = first + second;
-    std::cout << "Your numbers: " << sum << std::endl;
+    float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
+    std::cout << "Enter a, b, and c: ";
+    std::cin >> a >> b >> c;
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) {
+        //
+    } else {
+        //
+    }
+
     return 0;
 }
