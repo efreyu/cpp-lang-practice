@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.14)
-project(Cpp_practice2)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.14)
+PROJECT(cpp-lang-practice)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Cpp_practice chapter1/lesson1.cpp)
+add_executable(cpp-lang-practice ${CMAKE_CURRENT_SOURCE_DIR}/src/course/lesson2/main.cpp)
+
+target_include_directories(cpp-lang-practice PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
