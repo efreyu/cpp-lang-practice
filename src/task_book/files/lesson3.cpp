@@ -46,6 +46,9 @@ void readFromFile() {
     }
 }
 
+/*
+ * Построчное чтение файла
+ */
 void readByLine() {
     string s;
     ifstream file(FILENAME);
